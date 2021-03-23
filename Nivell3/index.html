@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery-validation demo | Bootstrap</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<script type="text/javascript" src="lib/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="dist/jquery.validate.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2 mt-5">
+
+				<div class="card">
+					<div class="card-header">
+						<h6 class="card-text text-center">Validate form with JQuery</h3>
+					</div>
+					<div class="card-body">
+						<form id="signupForm" method="post" class="form-horizontal" action="">
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="firstname">Nombre:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="lastname">Apellido:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="username">Nick:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="email">Email:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="password">Contrasena:</label>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label" for="confirm_password">Confirmar contrasena: </label>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" />
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<div class="col-sm-6 offset-sm-4">
+									<div class="form-check">
+										<input type="checkbox" id="agree" name="agree" value="agree" class="form-check-input"/>
+										<label class="form-check-label">Acepta nuestras politicas</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<div class="col-sm-9 offset-sm-4">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Envia</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<script src="validacioJQ.js"></script>
+</body>
+</html>
