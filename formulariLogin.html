@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>StudyLab - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Edusanvil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -29,26 +29,26 @@
     <div class="container">
        <div class="row">
           <div class="col-md-7 mt-5 mx-auto order-md-last card shadow border">
-            <form method="POST" action="registrado.html" id="myFormId" onsubmit="return registerValidate()" name="myForm">
            <div class="login-wrap p-4 p-md-5">
                <h3 class="mb-4">LOGIN</h3>
-               <form action="#" class="signup-form">
-                  
+               <form method="POST" action="#" id="login" onsubmit="return loginValidate()" name="log">
                  <div class="form-group">
                      <label class="label" for="email">Email Address</label>
-                     <input type="text" class="form-control" placeholder="johndoe@gmail.com">
+                     <input type="text" id="inputEmail" class="form-control" placeholder="johndoe@gmail.com">
+			<div class="invalid-feedback" id="errorEmail"></div>
+
                  </div>
                  <div class="form-group">
                   <label class="label" for="password">Password</label>
-                  <input id="password-field" type="password" class="form-control" placeholder="Password">
+                  <input id="inputPassword" type="password" class="form-control" placeholder="Password">
+			<div class="invalid-feedback" id="errorPassword"></div>
               </div>
             
               <div class="form-group d-flex justify-content-end mt-4">
-                  <button type="submit" class="btn btn-primary submit"><span class="fa fa-paper-plane"></span></button>
+                  <button type="submit" class="btn btn-primary" id="submit"><span class="fa fa-paper-plane"></span></button>
               </div>
           </form>
       </div>
-      </form>
   </div>
  </div>
  </div>
@@ -73,6 +73,12 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
-
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Validate -->
+<!-- <script src="validate.js"></script> -->
+<script src="validateLogin.js"></script>
 </body>
 </html>

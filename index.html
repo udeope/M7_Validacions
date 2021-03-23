@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>StudyLab - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Edusanvil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"> 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,14 +41,22 @@
          <!-- <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li> -->
          <!-- <li class="nav-item"><a href="#nosotros" class="nav-link">NOSOTROS</a></li> -->
          <li class="nav-item"><a href="formulariLogin.html" class="nav-link">LOGIN</a></li>
-         <li class="nav-item"><a href="formulariRegister.html" class="nav-link">REGISTER</a></li>
-         <li><input type="text" class="form-control mt-3 shadow-lg" id="cerca" placeholder="Cerca">
-			   <div class="invalid-feedback" id="errorCerca"></div>
-        </li>
+         <li class="nav-item"><a href="formulariRegister.html" class="nav-link">REGISTER </a></li>
+         <form method="POST" action="#" id='idForm' onsubmit="return cercaValidate()" name="myForm">
+          <div class="form-group">
+          <input type="text" class="mt-3 shadow border" id="inputCerca" placeholder="Cerca">
+          <!-- <button type="submit" class="fa fa-search fa-lg  text-muted"></button> -->
+          <button type="submit" class="btn btn-primary btn-sm submit"><span class="fa fa-paper-plane"></span></button>
+          <div class="invalid-feedback" id="errorCerca"></div>
+        </div>
+        </form> 
 
+        </div>
+        
      </ul>
  </div>
-</div>
+ 
+
 </nav>
 <!-- END nav -->
 
@@ -290,9 +300,12 @@
 </div>
 </section>
 <!-- Contact -->
+<div class="row container">
+  <div class="col mb-5"></div>
+</div>
        <section id="contact" class="container-fluid row mt-5 justify-content-center ftco-animate">
-          <div class="col-md-6 ">
-           <div class="p-4 p-md-5">
+          <div class="col-md-6">
+           <div class="p-4 p-md-5 card shadow">
                <h2 class="mb-4 text-center">Contact</h2>
                <form action="#" class="signup-form">
                   <div class="form-group">
@@ -449,6 +462,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
-
+<script src="validateCerca.js"></script>
 </body>
 </html>

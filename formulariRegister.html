@@ -29,11 +29,11 @@
     <div class="container">
        <div class="row">
           <div class="col-md-7 mt-5 mx-auto order-md-last card shadow border">
-            <form method="POST" action="registrado.html" id="myFormId" onsubmit="return registerValidate()" name="myForm">
+           
            <div class="login-wrap p-4 p-md-5">
                
                <h3 class="mb-4">REGISTER</h3>
-               <form action="#" class="signup-form">
+               <form method="POST" action="#" id="register" onsubmit="return registerValidate()" name="reg">
                   <div class="form-group">
                      <label class="label" for="name">Full Name</label>
                      <input type="text" class="form-control" id="inputName" placeholder="John Doe">
@@ -48,13 +48,13 @@
                  </div>
                  <div class="form-group">
                   <label class="label" for="password">Password</label>
-                  <input id="password-field" type="password" id="inputPassword" class="form-control" placeholder="Password">
+                  <input id="inputPassword" type="password" class="form-control" placeholder="Password">
 			<div class="invalid-feedback" id="errorPassword"></div>
 
               </div>
               <div class="form-group">
                   <label class="label" for="password">Confirm Password</label>
-                  <input id="password-field" type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password">
+                  <input id="inputConfirmPassword" type="password" class="form-control" placeholder="Confirm Password">
 			<div class="invalid-feedback" id="errorConfirmPassword"></div>
 
               </div>
@@ -75,7 +75,6 @@
           </form>
           <p class="text-center">Already have an account? <a href="formulariLogin.html">Sign In</a></p>
       </div>
-      </form>
   </div>
  </div>
  </div>
@@ -100,7 +99,11 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- VALIDATE -->
-<script src="validateRegister.js"></script>
+<script src="validate.js"></script>
 </body>
 </html>
