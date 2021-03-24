@@ -33,11 +33,31 @@ function registerValidate() {
 		acumErrores ++;
 	}
 
+    var lcl = /[a-z]/g;
+	var ucl = /[A-Z]/g;
+	var numbers = /[0-9]/g;
+
     if(inputPassword.value == "") {
 		inputPassword.classList.add("is-invalid");
 		document.getElementById("errorPassword").textContent = "Campo obligatorio";
 		acumErrores ++;
-	}
+	}else if(inputPassword.value.length < 8) {
+		inputPassword.classList.add('is-invalid');
+		document.getElementById('errorPassword').textContent = 'Minimo 8 caracteres';
+		acumErrores ++; 
+		} else if(!inputPassword.value.match(lcl)) {
+			inputPassword.classList.add('is-invalid');
+			document.getElementById('errorPassword').textContent = 'Minimo 1 minuscula';
+			acumErrores ++; 
+		} else if(!inputPassword.value.match(ucl)) {
+			inputPassword.classList.add('is-invalid');
+			document.getElementById('errorPassword').textContent = 'Minimo 1 mayuscula';
+			acumErrores ++; 
+		} else if(!inputPassword.value.match(numbers)) {
+			inputPassword.classList.add('is-invalid');
+			document.getElementById('errorPassword').textContent = 'Minimo 1 numero';
+			acumErrores ++; 
+		}
 	
     if(inputConfirmPassword.value == "") {
 		inputConfirmPassword.classList.add("is-invalid");
